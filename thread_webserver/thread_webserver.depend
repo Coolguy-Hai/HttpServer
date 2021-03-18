@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1600238339 source:/home/coolguy/projects/thread_webserver/http_conn.cpp
+	"http_conn.h"
+
+1600217774 /home/coolguy/projects/thread_webserver/http_conn.h
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<unistd.h>
+	<errno.h>
+	<fcntl.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<signal.h>
+	<sys/wait.h>
+	<sys/stat.h>
+	<sys/epoll.h>
+	<pthread.h>
+	<sys/mman.h>
+	<stdarg.h>
+	<sys/uio.h>
+	"locker.h"
+
+1600217879 /home/coolguy/projects/thread_webserver/locker.h
+	<exception>
+	<pthread.h>
+	<semaphore.h>
+
+1600235939 source:/home/coolguy/projects/thread_webserver/main.cpp
+	<iostream>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<unistd.h>
+	<errno.h>
+	<fcntl.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<signal.h>
+	<sys/wait.h>
+	<sys/stat.h>
+	<sys/epoll.h>
+	<pthread.h>
+	<sys/mman.h>
+	<stdarg.h>
+	"locker.h"
+	"threadpool.h"
+	"http_conn.h"
+
+1600158368 /home/coolguy/projects/thread_webserver/threadpool.h
+	<list>
+	<cstdio>
+	<exception>
+	<pthread.h>
+	"locker.h"
+

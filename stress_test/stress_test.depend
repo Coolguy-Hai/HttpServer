@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1600061715 source:/home/coolguy/projects/stress_test/main.cpp
+	<iostream>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<stdio.h>
+	<unistd.h>
+	<errno.h>
+	<fcntl.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<sys/types.h>
+	<netinet/in.h>
+	<signal.h>
+	<sys/wait.h>
+	<sys/stat.h>
+	<sys/epoll.h>
+
