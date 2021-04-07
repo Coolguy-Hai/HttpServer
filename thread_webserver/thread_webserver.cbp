@@ -11,11 +11,13 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="127.0.0.1 9999" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add library="../../../../usr/lib/x86_64-linux-gnu/libpthread.so" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libpthread.so" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -25,9 +27,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="/usr/lib/x86_64-linux-gnu/libpthread.so" />
 				</Linker>
 			</Target>
 		</Build>
@@ -35,11 +39,38 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="http_conn.cpp" />
-		<Unit filename="http_conn.h" />
-		<Unit filename="locker.h" />
-		<Unit filename="main.cpp" />
-		<Unit filename="threadpool.h" />
+		<Unit filename="include/Acceptor.h" />
+		<Unit filename="include/Callbacks.h" />
+		<Unit filename="include/Channel.h" />
+		<Unit filename="include/Condition.h" />
+		<Unit filename="include/Copyable.h" />
+		<Unit filename="include/EventLoop.h" />
+		<Unit filename="include/EventLoopThread.h" />
+		<Unit filename="include/InetAddress.h" />
+		<Unit filename="include/Mutex.h" />
+		<Unit filename="include/Poller.h" />
+		<Unit filename="include/Socket.h" />
+		<Unit filename="include/SocketsOps.h" />
+		<Unit filename="include/TcpConnection.h" />
+		<Unit filename="include/TcpServer.h" />
+		<Unit filename="include/Thread.h" />
+		<Unit filename="include/http_conn.h" />
+		<Unit filename="include/locker.h" />
+		<Unit filename="include/test.h" />
+		<Unit filename="include/threadpool.h" />
+		<Unit filename="src/Acceptor.cpp" />
+		<Unit filename="src/Channel.cpp" />
+		<Unit filename="src/EventLoop.cpp" />
+		<Unit filename="src/EventLoopThread.cpp" />
+		<Unit filename="src/InetAddress.cpp" />
+		<Unit filename="src/Poller.cpp" />
+		<Unit filename="src/Socket.cpp" />
+		<Unit filename="src/SocketsOps.cpp" />
+		<Unit filename="src/TcpConnection.cpp" />
+		<Unit filename="src/TcpServer.cpp" />
+		<Unit filename="src/Thread.cpp" />
+		<Unit filename="src/http_conn.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
